@@ -1,0 +1,8 @@
+Reads the message history of a session as plain text, so an agent can catch up on a conversation it was not part of.
+
+Use this when the user asks you to analyze, summarize, or act on a conversation that happened in another session — for example optimizing a prompt from the main conversation, or updating memory files based on what was discussed.
+
+Notes:
+- Without arguments, reads the origin/main session this session was created from (if any).
+- Only user and assistant text is returned; tool calls and other internals are omitted.
+- The agent names of assistant replies are included so you can tell who wrote what.
